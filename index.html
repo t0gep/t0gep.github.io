@@ -1,8 +1,6 @@
-<html>
+﻿<html>
 
 <head>
-  
-  <link rel="icon" href="data:,">
 
 <meta http-equiv"Content-Type" content="text/html;charset=UTF-8"/>
 
@@ -10,12 +8,46 @@
 
 <link rel="stylesheet" type="text/css" href="animsition.min.css">
 
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="js/animsition.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass               :   'zoom-in-sm', // ロード時のエフェクト
+    outClass              :   'zoom-out-sm', //離脱時のエフェクト
+    inDuration            :    1000, //ロード時の演出時間
+    outDuration           :    1000, //離脱時の演出時間
+    linkElement           :   '.animsition-link', //アニメーションを行う要素
+    // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+    loading               :    false, //ローディングの有効/無効
+    loadingParentElement  :   'body', //ローディング要素のラッパー
+    loadingClass          :   'animsition-loading', //ローディングのクラス
+    overlay               :   false, //オーバーレイの有効/無効
+    overlayClass          :   'animsition-overlay-slide', //オーバーレイのクラス
+    overlayParentElement  :   'body' //オーバーレイ要素のラッパー
+  });
+});
+
+</script>
+
 <title>とげのホームページ（笑）</title>
 
 </head>
 
 <body>
-    
+
+<div class="animsition">
+
+<center>
+
+<table border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://www.rays-counter.com/"><img src="http://www.rays-counter.com/d355_f6_022/57d2e71aea272/" alt="�A�N�Z�X�J�E���^�[" border="0"></a></td></tr><tr><td align="center"><img src="http://www.rays-counter.com/images/counter_01.gif" border="0"><img src="http://www.rays-counter.com/images/counter_02.gif" border="0"><img src="http://www.rays-counter.com/images/counter_03.gif" border="0"><img src="http://www.rays-counter.com/images/counter_04.gif" border="0" ><img src="http://www.rays-counter.com/images/counter_05.gif" border="0"></td></tr></table>
+
+</center>
+
+
 <p class="box"></p>
 
 <body bgcolor="#000000">
@@ -28,17 +60,15 @@
 
 <ul class="tate">
 
-<li><a href="profile.html">PROFILE</a></li>
+<li><a href="Profile.html" class="animsition-link">PROFILE</a></li>
 
-<li><a href="contact.html">CONTACT</a></li>
+<li><a href="Contact.html" class="animsition-link">CONTACT</a></li>
 
-<li><a href="movies.htmll">MOVIES</a></li>
+<li><a href="movies.html" class="animsition-link">MOVIES</a></li>
 
-<li><a href="downloads.html">DOWNLOADS</a></li>
-  
-<li><a href="physics.html">PHYSICS</a></li>
+<li><a href="Downloads.html" class="animsition-link">DOWNLOADS</a></li>
 
-<li><a href="http://t0gelin.wpblog.jp/">BLOG</a></li>
+<li><a href="http://t0gelin.wpblog.jp/" class="animsition-link">BLOG</a></li>
 
 </ul>
 
@@ -56,8 +86,8 @@
 
 </Div>
 
-  
-  
+</div>
+
 </body>
 
 </html>
