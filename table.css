@@ -1,6 +1,6 @@
 a:link    { color: white; text-decoration: none; transition: background-color 1s;} /*秒かけて背景色がアニメーション*/
 a:visited { color: white; text-decoration: none; }
-a:hover   { color: white; background-color: #086A87; text-decoration: none;}
+a:hover   { color: white; background-color: none; text-decoration: none;}
 a:active  { color: white; }
 
 a {
@@ -16,10 +16,11 @@ ul.tate {
 
 ul.tate li {
  width:150px;
- border:1px solid white;
+ border:0px solid white;
  /* display: inline-block;  横並びになる */
  text-align: center;
  font-size:15px;
+list-style: none;
 }
 
 ul.tate li a {
@@ -36,7 +37,7 @@ ul.yoko {
 }
 
 ul.yoko li {
- border:1px solid white;
+ border:0px solid white;
  display: inline-block;  /* 横並びになる */
  text-align: center;
  font-size:15px;
